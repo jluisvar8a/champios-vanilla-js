@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Final Champios</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="./imagen/logo.png" alt="logo_champions" class="logo" />
+      <h1>Final champions legue</h1>
+    </div>
+    <div class="paginas">
+      <div class="p active" id="p0" onclick="activarPestana(event)">Resultado</div>
+      <div class="p" id="p1" onclick="activarPestana(event)">Alineación</div>
+      <div class="p" id="p2" onclick="activarPestana(event)">Jugadores</div>
+    </div>
+    <div class="container">
+      <div class="c active" data-pestana="p0">
+        <div class="contRes">
+          <div class="res">
+            <div class="liv">
+              <img src="./imagen/tottenhan.png" alt="logoTottenham" class="img" />
+              <p>Tottenham</p>
+            </div>
+            <div>
+              <p class="fin">0 &nbsp;&nbsp;- &nbsp;&nbsp;2</p>
+            </div>
+            <div class="tot">
+              <img src="./imagen/liverpool.png" alt="logoLiverpool" class="img" />
+              <p>Liverpool</p>
+            </div>
+          </div>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/GV5xdsbtmi0"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="est">
+            <table class="tabla">
+              <tr class="titulo">
+                <th>
+                  <img src="./imagen/tottenhan.png" alt="logoTottenham" class="img1" />
+                </th>
+                <th class="stadis tt">ESTADÍSTICAS DEL EQUIPO</th>
+                <th>
+                  <img src="./imagen/liverpool.png" alt="logoLiverpool" class="img2" />
+                </th>
+              </tr>
+              <tr class="titulo"><td class="td" >16</td><th class="stadis">Remates</th><td class="td2">14</td></tr>
+              <tr class="titulo"><td class="td" >8</td><th class="stadis">Remates al arco</th><td class="td2">3</td></tr>              
+              <tr class="titulo"><td class="td" >65%</td><th class="stadis">Posesión</th><td class="td2">35%</td></tr>
+              <tr class="titulo"><td class="td" >510</td><th class="stadis">Pases</th><td class="td2">272</td></tr>
+              <tr class="titulo"><td class="td" >80%</td><th class="stadis">Precisión de los pases</th><td class="td2">64%</td></tr>
+              <tr class="titulo"><td class="td" >5</td><th class="stadis">Faltas</th><td class="td2">6</td></tr>
+              <tr class="titulo"><td class="td" >0</td><th class="stadis">Tarjetas amarillas</th><td class="td2">0</td></tr>
+              <tr class="titulo"><td class="td" >0</td><th class="stadis">Tarjetas rojas</th><td class="td2">0</td></tr>
+              <tr class="titulo"><td class="td" >3</td><th class="stadis">Posición adelantada</th><td class="td2">2</td></tr>
+              <tr class="titulo"><td class="td" >8</td><th class="stadis">Tiros de esquina</th><td class="td2">9</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="c" data-pestana="p1">
+        <div class="cancha">
+          <div class="lado1">
+            <div class="contlado1">
+              <div class="la181">
+                <div class="portero1">
+                </div>
+              </div>
+              <div class="contla6501">
+                <div class="la6501"></div>
+              </div>
+            </div>
+            <div class="cen1"></div>
+            <div class="line" id="line0"></div>
+          </div>
+          <div class="lado2">
+            <div class="line1" id="line1"></div>
+            <div class="cen2"></div>
+            <div class="contlado2">
+              <div class="contla6502">
+                <div class="la6502"></div>
+              </div>
+              <div class="la182">
+                <div class="portero2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c" data-pestana="p2">
+        <div class="contJugadores">
+          <select name="select" id="select" onchange="queEquipo()">
+            <option value="tottenham">Tottenham</option>
+            <option value="liverpool">Liverpool</option>
+          </select>
+          <div class="eq act" id="to">
+            <div class="img-J">
+                <img src="./imagen/tottenham/son.jpg" alt="Son Heung-Min" class="img-i">
+                <div class="nom">Son Heung-Min</div>
+                <div class="pos">Mediocampista</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/kane.jpg" alt="Harry Kane" class="img-i">
+                <div class="nom">Harry Kane</div>
+                <div class="pos">Delantero</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/moura.jpg" alt="Lucas Moura" class="img-i">
+                <div class="nom">Lucas Moura</div>
+                <div class="pos">Mediocampista</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/eriksen.jpg" alt="Christian Eriksen" class="img-i">
+                <div class="nom">Christian Eriksen</div>
+                <div class="pos">Mediocampista</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/alli.jpg" alt="Dele Alli" class="img-i">
+                <div class="nom">Dele Alli</div>
+                <div class="pos">Mediocampista</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/Ndombele.jpg" alt="Tanguy NDombele" class="img-i">
+                <div class="nom">Tanguy NDombele</div>
+                <div class="pos">Mediocampista</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/lloris.jpg" alt="Hugo Lloris" class="img-i">
+                <div class="nom">Hugo Lloris</div>
+                <div class="pos">Arquero</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/Llorente.jpg" alt="Fernando Llorente" class="img-i">
+                <div class="nom">Fernando Llorente</div>
+                <div class="pos">Delantero</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/vertonghen.jpg" alt="Jan Vertonghen" class="img-i">
+                <div class="nom">Jan Vertonghen</div>
+                <div class="pos">Defensa</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/sissoko.jpg" alt="Moussa Sissoko" class="img-i">
+                <div class="nom">Moussa Sissoko</div>
+                <div class="pos">Mediocampista</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/toby.jpg" alt="Toby Alderweireld" class="img-i">
+                <div class="nom">Toby Alderweireld</div>
+                <div class="pos">Defensa</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/rose.jpg" alt="Danny Rose" class="img-i">
+                <div class="nom">Danny Rose</div>
+                <div class="pos">Defensa</div>
+            </div>
+            <div class="img-J">
+                <img src="./imagen/tottenham/sanchez.jpg" alt="Davinson Sánchez" class="img-i">
+                <div class="nom">Davinson Sánchez</div>
+                <div class="pos">Defensa</div>
+            </div>  
+            <div class="img-J">
+                <img src="./imagen/tottenham/trippier.jpg" alt="Kieran Trippier" class="img-i">
+                <div class="nom">Kieran Trippier</div>
+                <div class="pos">Defensa</div>
+            </div>  
+            <div class="img-J">
+                <img src="./imagen/tottenham/vincent.jpg" alt="Vincent Janssen" class="img-i">
+                <div class="nom">Vincent Janssen</div>
+                <div class="pos">Delantero</div>
+            </div>  
+            <div class="img-J">
+                <img src="./imagen/tottenham/foyth.jpg" alt="Juan Marcos Foyth" class="img-i">
+                <div class="nom">Juan Marcos Foyth</div>
+                <div class="pos">Defensa</div>
+            </div>  
+            <div class="img-J">
+                <img src="./imagen/tottenham/winks.jpg" alt="Harry winks" class="img-i">
+                <div class="nom">Harry winks</div>
+                <div class="pos">Mediocampista</div>
+            </div> 
+            <div class="img-J">
+                <img src="./imagen/tottenham/lamela.jpg" alt="Erik Lamela" class="img-i">
+                <div class="nom">Erik Lamela</div>
+                <div class="pos">Mediocampista</div>
+            </div> 
+            <div class="img-J">
+                <img src="./imagen/tottenham/victor.jpg" alt="Victor Wanyama" class="img-i">
+                <div class="nom">Victor Wanyama</div>
+                <div class="pos">Mediocampista</div>
+            </div> 
+            <div class="img-J">
+                <img src="./imagen/tottenham/dier.jpg" alt="Eric Dier" class="img-i">
+                <div class="nom">Eric Dier</div>
+                <div class="pos">Mediocampista</div>
+            </div> 
+            <div class="img-J">
+                <img src="./imagen/tottenham/ben.jpg" alt="Ben Davies" class="img-i">
+                <div class="nom">Ben Davies</div>
+                <div class="pos">Defensa</div>
+            </div> 
+            <div class="img-J">
+                <img src="./imagen/tottenham/paulo.jpg" alt="Paulo Gazzaniga" class="img-i">
+                <div class="nom">Paulo Gazzaniga</div>
+                <div class="pos">Arquero</div>
+            </div> 
+          </div>
+        <div class="eq" id="li">
+          <div class="img-J">
+              <img src="./imagen/liverpool/salah.jpg" alt="Mohamed salah" class="img-i">
+              <div class="nom">Mohamed salah</div>
+              <div class="pos">Delantero</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/mané.jpg" alt="Sadio Mané" class="img-i">
+              <div class="nom">Sadio Mané</div>
+              <div class="pos">Delantero</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/van-dijk.jpg" alt="Virgil Van Dijk" class="img-i">
+              <div class="nom">Virgil Van Dijk</div>
+              <div class="pos">Defensa</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/origi.jpg" alt="Divock Origi" class="img-i">
+              <div class="nom">Divock Origi</div>
+              <div class="pos">Delantero</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/alisson.jpg" alt="Alisson Becker" class="img-i">
+              <div class="nom">Alisson Becker</div>
+              <div class="pos">Arquero</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/firmino.jpg" alt="Roberto Firmino" class="img-i">
+              <div class="nom">Roberto Firmino</div>
+              <div class="pos">Delantero</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/keita.jpg" alt="Naby Keita" class="img-i">
+              <div class="nom">Naby Keita</div>
+              <div class="pos">Mediocampista</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/shaquiri.jpg" alt="Xherdan Shaqiri" class="img-i">
+              <div class="nom">Xherdan Shaqiri</div>
+              <div class="pos">Delantero</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/andrew.jpg" alt="Andrew Robertson" class="img-i">
+              <div class="nom">Andrew Robertson</div>
+              <div class="pos">Defensa</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/alexander.jpg" alt="Trent Alexander-Arnold" class="img-i">
+              <div class="nom">Trent Alexander-Arnold</div>
+              <div class="pos">Defensa</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/georginio.jpg" alt="Georginio Wijnaldum" class="img-i">
+              <div class="nom">Georginio Wijnaldum</div>
+              <div class="pos">Mediocampista</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/henderson.jpg" alt="Jordan Henderson" class="img-i">
+              <div class="nom">Jordan Henderson</div>
+              <div class="pos">Mediocampista</div>
+          </div>
+          <div class="img-J">
+              <img src="./imagen/liverpool/fabinho.jpg" alt="Fabinho Tavares" class="img-i">
+              <div class="nom">Fabinho Tavares</div>
+              <div class="pos">Mediocampista</div>
+          </div>  
+          <div class="img-J">
+              <img src="./imagen/liverpool/milner.jpg" alt="James Milner" class="img-i">
+              <div class="nom">James Milner</div>
+              <div class="pos">Mediocampista</div>
+          </div>  
+          <div class="img-J">
+              <img src="./imagen/liverpool/chamberlain.jpg" alt="Alex Chamberlain" class="img-i">
+              <div class="nom">Alex Chamberlain</div>
+              <div class="pos">Mediocampista</div>
+          </div>  
+          <div class="img-J">
+              <img src="./imagen/liverpool/gomez.jpg" alt="Joe Gomez" class="img-i">
+              <div class="nom">Joe Gomez</div>
+              <div class="pos">Defensa</div>
+          </div>  
+          <div class="img-J">
+              <img src="./imagen/liverpool/matip.jpg" alt="Joel Matip" class="img-i">
+              <div class="nom">Joel Matip</div>
+              <div class="pos">Defensa</div>
+          </div> 
+          <div class="img-J">
+              <img src="./imagen/liverpool/dejan.jpg" alt="Dejan Lovren" class="img-i">
+              <div class="nom">Dejan Lovren</div>
+              <div class="pos">Defensa</div>
+          </div> 
+          <div class="img-J">
+              <img src="./imagen/liverpool/rhian.jpg" alt="Rhian Brewster" class="img-i">
+              <div class="nom">Rhian Brewster</div>
+              <div class="pos">Delantero</div>
+          </div> 
+          <div class="img-J">
+              <img src="./imagen/liverpool/lallana.jpg" alt="Adan Lallana" class="img-i">
+              <div class="nom">Adan Lallana</div>
+              <div class="pos">Mediocampista</div>
+          </div> 
+          <div class="img-J">
+              <img src="./imagen/liverpool/sepp.jpg" alt="Sepp Vanden Berg" class="img-i">
+              <div class="nom">Sepp Vanden Berg</div>
+              <div class="pos">Defensa</div>
+          </div> 
+          <div class="img-J">
+              <img src="./imagen/liverpool/simon.jpg" alt="Simon Mignolet" class="img-i">
+              <div class="nom">Simon Mignolet</div>
+              <div class="pos">Arquero</div>
+          </div> 
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

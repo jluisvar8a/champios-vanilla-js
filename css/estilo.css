@@ -1,0 +1,807 @@
+
+body {
+  background: #051F30;
+  color: white;
+  font-family: arial,sans-serif;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+}
+
+.logo {
+  width: 150px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.paginas {
+  display: flex;
+  align-items: flex-end;
+  color: #000000;
+  cursor: pointer;
+}
+
+.p {
+  border: 1px solid #cccccc;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 20px;
+  background: #ebebeb;
+  height: 20px;
+  border-bottom: 0;
+
+}
+
+.p.active {
+  background: #ffffff;
+  height: 24px;
+  margin-bottom: -1px;
+  z-index: 1;
+}
+
+.c {
+  background: #ffffff;
+  color: #000000;
+  padding: 20px;
+  display: none;
+  width: 100%;
+  border-radius: 0 5px 5px 5px;
+  border: 1px solid #cccccc;
+}
+
+.c.active {
+  display: initial;
+}
+
+.tabla {
+  padding: 8px 24px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contRes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: 100px;
+  margin-bottom: 4px;
+}
+
+.img1 {
+  width: 52px;
+}
+
+.img2 {
+  width: 52px;
+}
+
+.res {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 15px;
+  box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.100); 
+  border-radius: 5px;
+}
+
+.video {
+  /* padding: 20px 100px; */
+  margin-bottom: 15px;
+}
+
+.liv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.tot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 100px;
+}
+
+ p {
+  margin: 0;
+  font-size: 20px;
+} 
+
+.fin  {
+  font-size: 40px;
+}
+
+.container {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  max-width: 720px;
+}
+
+.titulo {
+  height: 40px;
+}
+
+
+.est {
+  width: 100%;
+}
+
+.stadis {
+  width: 100%;
+  font-weight: normal;
+  padding: 0 8px;
+}
+
+.tt {
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
+}
+
+.cancha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lado1 * {
+  background-color: #0F9D58;
+}
+
+.lado1  {
+  border-top: #0F9D58 solid 2px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 600px;
+  height: 400px;
+  background-color: #0F9D58;
+  border: 1px solid white;  
+  position: relative;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  background: none;
+  z-index: 5;
+}
+
+
+.jugador0 {
+  border-radius: 50%;
+  border: 2px solid white;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-color: #0f204b;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .nombre0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  width: 25%;
+}
+
+.posicion00 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: none;
+  position: absolute;
+  top: 3px;
+}
+
+.span0 {
+  text-align: center;
+  color: white;
+  background: #0f204b !important;  
+}
+
+.name {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background: none;
+  text-align: center;
+  margin-top: 1px;
+  background-color: #0F9D58;
+}
+
+.posicion01 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 280px;
+  background: none;
+  z-index: 3;
+}
+
+
+.posicion02 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 180px;
+  background: none;
+  z-index: 3;
+}
+
+.posicion03 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 80px;
+  background: none;
+  z-index: 3;
+}
+
+.posicion04 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  background: none;
+  z-index: 3;
+}
+
+.portero1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 180px;
+  height: 60px;
+  border: 1px solid white;
+  border-top: 0;
+}
+
+.la181 {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 160px;
+  border: 1px solid white;
+  border-top: 0;
+}
+
+.contla6501 {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #0F9D58;
+  z-index: -1;
+}
+
+.la6501 {
+  width: 180px;
+  height: 90px;
+  border: 1px solid white;
+  border-radius: 0 0 100px 100px;
+  position: absolute;
+  top: -50px;
+  left: 110px;
+}
+
+.cen1 {
+  width: 180px;
+  height: 90px;
+  border: 1px solid white;
+  border-radius: 100px 100px 0 0;
+  border-bottom: 0;
+}
+
+.contlado1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.lado2 * {
+  background-color: #0F9D58;
+}
+
+.lado2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  justify-content: space-between;
+  width: 600px;
+  height: 400px;
+  background-color: #0F9D58;
+  border: 1px solid white;
+  position: relative;
+}
+
+.line1 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+   background: none;
+  z-index: 6;
+}
+
+.span1 {
+  text-align: center;
+  color: white;
+  background: #d3171e !important;  
+}
+
+.jugador1 {
+  border-radius: 50%;
+  border: 2px solid white;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-color: #d3171e;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nombre1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  width: 25%;
+}
+
+.posicion10 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: none;
+  position: absolute;
+  bottom: 7px;
+}
+
+.posicion11 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 250px;
+  background: none;
+  z-index: 3;
+}
+
+.posicion12 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  top: 150px;
+  background: none;
+  z-index: 3;
+}
+
+.posicion13 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  background: none;
+  z-index: 3;
+}
+
+.portero2 {
+  width: 180px;
+  height: 60px;
+  border: 1px solid white;
+  border-bottom: 0;
+}
+
+.la182 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 400px;
+  height: 160px;
+  border: 1px solid white;
+  border-bottom: 0;
+}
+
+.la6502 {
+  width: 180px;
+  height: 90px;
+  border: 1px solid white;
+  border-radius: 100px 100px 0 0;
+  position: absolute;
+  top: -50px;
+  left: 110px;
+}
+
+.cen2 {
+  width: 180px;
+  height: 90px;
+  border: 1px solid white;
+  border-radius: 0 0 100px 100px;
+  border-top: 0;
+}
+
+.contlado2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.contla6502 {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #0F9D58;
+  z-index: -1;
+}
+
+.contJugadores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+select {
+  /* border: none; */
+  border-radius: 5px;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.eq {
+  display: none;
+}
+
+.eq.act {
+  display: initial;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.100); */
+}
+
+.img-J {
+  width: 112px;
+  margin: 10px 0 0 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,.12);
+}
+
+.img-i {
+  border-radius: 8px 8px 0 0;
+}
+
+.nom {
+  padding: 10px 0 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,.87);
+}
+
+.pos {
+  padding: 0 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: rgba(0,0,0,.54);
+}
+
+@media (max-width: 375px) { 
+  body {
+    font-size: 14px;
+  }
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+  h1 {
+    font-size: 16px;
+    padding-top: 30px;
+  }
+  .p {
+    width: 70px;
+    padding: 10px 15px;
+  }
+
+  .liv {
+    padding-left: 10px;
+  }
+  .tot {
+    padding-right: 10px;
+  }
+  .img {
+    width: 50px;
+  }
+  .fin {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .tabla {
+    font-size: 13px;
+  }
+  .res {
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+  .est {
+    width: auto;
+  }
+
+  /* la cancha lado de arriba*/
+  .lado1 {
+    width: 300px;
+    height: 200px;
+  }
+  .portero1 {
+    width: 90px;
+    height: 30px;
+  }
+  .la181 {
+    width: 200px;
+    height: 80px;
+  }
+  .la6501 {
+    width: 90px;
+    height: 45px;
+    top: -25px;
+    left: 55px;
+  }
+  .cen1 {
+    width: 90px;
+    height: 45px;
+  }
+
+  .line {
+    width: 300px;
+    height: 200px;
+  }
+  .jugador0 {
+    height: 16px;
+    width: 16px;
+  }
+  .name {
+   font-size: 10px;
+  }
+  .span0 {
+    font-size: 10px;
+  }
+  .posicion01 {
+    bottom: 140px;
+  }
+  .posicion02 {
+    bottom: 90px;
+  }
+  .posicion03 {
+    bottom: 40px;
+  }
+  .posicion04 {
+    bottom: 4px;
+  }
+
+  /* la cancha lado de abajo*/
+  .lado2 {
+    width: 300px;
+    height: 200px;
+  }
+  .portero2 {
+    width: 90px;
+    height: 30px;
+  }
+  .la182 {
+    width: 200px;
+    height: 80px;
+  }
+  .la6502 {
+    width: 90px;
+    height: 45px;
+    top: -25px;
+    left: 55px;
+  }
+  .cen2 {
+    width: 90px;
+    height: 45px;
+  }
+
+  .line1 {
+    width: 300px;
+    height: 200px;
+  }
+  .jugador1 {
+    height: 16px;
+    width: 16px;
+  }
+
+  .span1 {
+    font-size: 10px;
+  }
+  .posicion10 {
+    bottom: 3.5px;
+  }
+  .posicion11 {
+    top: 125px;
+  }
+  .posicion12 {
+    top: 75px;
+  }
+  .posicion13 {
+    top: 25px;
+  }
+  select {
+    width: 264px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 376px)  {
+  body {
+    font-size: 14px;
+  }
+  .logo {
+    width: 90px;
+    height: 90px;
+  }
+  h1 {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+
+   .liv {
+    padding-left: 10px;
+  }
+
+  .tot {
+    padding-right: 10px;
+  }
+
+  iframe {
+    width: 455px;
+  }
+
+  .img1 {
+    padding: 0;
+  }
+
+  .img2 {
+    padding: 0;
+  }
+
+
+  /* la cancha lado de arriba*/
+  .lado1 {
+    width: 450px;
+    height: 300px;
+  }
+  .portero1 {
+    width: 135px;
+    height: 45px;
+  }
+  .la181 {
+    width: 300px;
+    height: 120px;
+  }
+  .la6501 {
+    width: 135px;
+    height: 77.5px;
+    top: -37.5px;
+    left: 80px;
+  }
+  .cen1 {
+    width: 135px;
+    height: 67.5px;
+  }
+
+  .line {
+    width: 450px;
+    height: 300px;
+  }
+  .jugador0 {
+    height: 24px;
+    width: 24px;
+  }
+  .name {
+    font-size: 12px;
+  } 
+
+  .span0 {
+    font-size: 11px;
+  }
+
+  .posicion01 {
+    bottom: 200px;
+  }
+
+  .posicion02 {
+    bottom: 140px;
+  }
+
+   /* la cancha lado de abajo*/
+   .lado2 {
+    width: 450px;
+    height: 300px;
+  }
+  .portero2 {
+    width: 135px;
+    height: 45px;
+  }
+  .la182 {
+    width: 300px;
+    height: 120px;
+  }
+  .la6502 {
+    width: 135px;
+    height: 77.5px;
+    top: -37.5px;
+    left: 80px;
+  }
+  .cen2 {
+    width: 135px;
+    height: 67.5px;
+  }
+
+  .line1 {
+    width: 450px;
+    height: 300px;
+  }
+  .jugador1 {
+    height: 24px;
+    width: 24px;
+  }
+
+  .span1 {
+    font-size: 11px;
+  }
+
+  .posicion10 {
+    bottom: 3.5px;
+  }
+  .posicion11 {
+    top: 190px;
+  }
+  .posicion12 {
+    top: 120px;
+  }
+  .posicion13 {
+    top: 50px;
+  }
+
+}
